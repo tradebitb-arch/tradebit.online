@@ -480,22 +480,18 @@ footer {
       <svg viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm4.8 13.2h-1.2v1.2c0 1.988-1.612 3.6-3.6 3.6S8.4 16.388 8.4 14.4v-4.8c0-1.988 1.612-3.6 3.6-3.6 1.529 0 2.84.955 3.374 2.314l-1.32.527A2.403 2.403 0 0 0 12 7.2a2.403 2.403 0 0 0-2.4 2.4v4.8A2.403 2.403 0 0 0 12 16.8a2.403 2.403 0 0 0 2.4-2.4V14.4H12v-1.2h4.8v0z"/></svg>
     </a>
   </div>
-   
   <div class="lang-dropdown" id="langDropdown">
-   <button class="lang-toggle" onclick="toggleLangMenu()">
-    <span id="langFlag" style="font-size:14px">🇬🇧</span>
-    <span id="langLabel">EN</span>
-    <span class="arrow">▼</span>
-  </button>
-  <div class="lang-menu">
-    <button class="lang-opt active" id="opt-en"
-            onclick="switchLang('en',this)" data-flag="🇬🇧">🇬🇧 EN</button>
-    <button class="lang-opt"        id="opt-ru"
-            onclick="switchLang('ru',this)" data-flag="🇷🇺">🇷🇺 RU</button>
-    <button class="lang-opt"        id="opt-de"
-            onclick="switchLang('de',this)" data-flag="🇩🇪">🇩🇪 DE</button>
-    <button class="lang-opt"        id="opt-ua"
-            onclick="switchLang('ua',this)" data-flag="🇺🇦">🇺🇦 UA</button>
+    <button class="lang-toggle" onclick="toggleLangMenu()">
+      <span style="font-size:14px">🇬🇧</span>
+      <span id="langLabel">EN</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="lang-menu">
+      <button class="lang-opt active" id="opt-en" onclick="switchLang('en',this)">🇬🇧 EN</button>
+      <button class="lang-opt"        id="opt-ru" onclick="switchLang('ru',this)">🇷🇺 RU</button>
+      <button class="lang-opt"        id="opt-de" onclick="switchLang('de',this)">🇩🇪 DE</button>
+      <button class="lang-opt"        id="opt-ua" onclick="switchLang('ua',this)">🇺🇦 UA</button>
+    </div>
   </div>
 </div>
 
@@ -2325,21 +2321,11 @@ document.addEventListener('click', function(e) {
 });
 function switchLang(lang, btn) {
   currentLang = lang;
-
-  document.querySelectorAll('.lang-opt').forEach(function(b) {
-    b.classList.remove('active');
-  });
+  document.querySelectorAll('.lang-opt').forEach(function(b) { b.classList.remove('active'); });
   btn.classList.add('active');
-
   document.getElementById('langDropdown').classList.remove('open');
-
+  // Update toggle label
   document.getElementById('langLabel').textContent = lang.toUpperCase();
-
-  var flagSpan = document.getElementById('langFlag');
-  if (flagSpan && btn.dataset.flag) {
-    flagSpan.textContent = btn.dataset.flag;
-  }
-
   showContent();
   window.scrollTo({ top: 52, behavior: 'smooth' });
 }
