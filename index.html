@@ -489,6 +489,8 @@ footer {
     <div class="lang-menu">
       <button class="lang-opt active" id="opt-en" onclick="switchLang('en',this)">🇬🇧 EN</button>
       <button class="lang-opt"        id="opt-ru" onclick="switchLang('ru',this)">🇷🇺 RU</button>
+      <button class="lang-opt"        id="opt-de" onclick="switchLang('de',this)">🇩🇪 DE</button>
+      <button class="lang-opt"        id="opt-ua" onclick="switchLang('ua',this)">🇺🇦 UA</button>
     </div>
   </div>
 </div>
@@ -770,6 +772,631 @@ footer {
 </div><!-- /v2-lang-ru -->
 
 <!-- ══════════════════════════════════════════════════════════
+     V2 — GERMAN
+══════════════════════════════════════════════════════════ -->
+<div class="lang-section" id="v2-lang-de">
+
+<div class="hero">
+  <div class="hero-grid"></div><div class="hero-glow"></div>
+  <div class="eyebrow">⚡ Digitales Produkt · Vollständiger Quellcode · Sofortige Lieferung</div>
+  <div class="logo-wrap"><img src="logo.jpg" alt="TradeBitBot Logo"></div>
+  <h1>Trade<span class="h1-bit">Bit</span><span class="h1-sub">Arbitrage Bot</span></h1>
+  <div class="ver-tag">VERSION 2.0</div>
+  <p class="hero-desc">
+    Ein <strong>produktionsreifer Multi-User-Telegram-Bot</strong>, der 12 Kryptobörsen in Echtzeit auf Arbitrage-Möglichkeiten scannt.<br>
+    Kaufen Sie den Quellcode – <strong>starten Sie noch heute Ihr eigenes Arbitrage-Geschäft.</strong>
+  </p>
+  <div class="price-wrap">
+    <div class="price-box">
+      <div class="price-lbl">Einmalzahlung · Lebenslanges Eigentum am Code</div>
+      <div class="price-num"><sup>$</sup>1000</div>
+      <div class="price-sub">Vollständiger Quellcode + Deployment-Guides für AWS &amp; Heroku inklusive</div>
+    </div>
+  </div>
+  <a href="https://tradebot1.gumroad.com/" target="_blank" class="btn">Jetzt auf Gumroad kaufen <span class="arr">→</span></a>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">12</div><div class="stat-l">Börsen</div></div>
+  <div class="stat"><div class="stat-n">5s</div><div class="stat-l">Min. Intervall</div></div>
+  <div class="stat"><div class="stat-n">5K+</div><div class="stat-l">Coins</div></div>
+  <div class="stat"><div class="stat-n">3</div><div class="stat-l">Tarife</div></div>
+  <div class="stat"><div class="stat-n">4</div><div class="stat-l">Sprachen</div></div>
+  <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Nutzer</div></div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Lieferumfang</div>
+  <h2>Alles, was Sie zum <em>Start</em> brauchen</h2>
+  <p class="lead">
+    Ein Kauf. Vollständiger Code. Schritt-für-Schritt-Guides. Ihr Bot läuft in wenigen Stunden.
+  </p>
+  <div class="inc-grid">
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">01</span>
+        <span class="inc-title">Vollständiger Quellcode v2.0</span>
+      </div>
+      <div class="inc-desc">
+        Alle Python-Module: Arbitrage-Engine, Telegram-Handler, Zahlungen, Nutzerdatenbank,
+        Abo-Logik, Exchange-Helper – sauber strukturiert und dokumentiert.
+      </div>
+      <span class="inc-badge">PYTHON 3.11+</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">02</span>
+        <span class="inc-title">AWS Deployment Guide</span>
+      </div>
+      <div class="inc-desc">
+        Schritt-für-Schritt: EC2-Setup, Umgebungsvariablen, systemd-Autostart, Health-Monitoring
+        und Domain-Anbindung. Von Null bis Live-System.
+      </div>
+      <span class="inc-badge">AWS EC2</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">03</span>
+        <span class="inc-title">Heroku Deployment Guide</span>
+      </div>
+      <div class="inc-desc">
+        Deployment mit einem Befehl: Procfile, Environment-Variablen, Tipps für den Free-Tier
+        und Worker-Dyno-Konfiguration.
+      </div>
+      <span class="inc-badge">HEROKU</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">04</span>
+        <span class="inc-title">Integriertes Zahlungssystem</span>
+      </div>
+      <div class="inc-desc">
+        Zahlungen über Telegram Stars (XTR) mit 3 Abostufen direkt im Bot. Kein Stripe. Kein PayPal.
+        Keine Drittanbieter-Gebühren.
+      </div>
+      <span class="inc-badge">TELEGRAM STARS</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">05</span>
+        <span class="inc-title">Multi-User SQLite-Datenbank</span>
+      </div>
+      <div class="inc-desc">
+        SQLite im WAL-Modus mit Nutzer-Isolation, In-Memory-Cache für Geschwindigkeit und
+        einmaligem JSON-Migrationstool.
+      </div>
+      <span class="inc-badge">SQLITE + WAL</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">06</span>
+        <span class="inc-title">Sicheres Konfigurations-Template</span>
+      </div>
+      <div class="inc-desc">
+        Alle Zugangsdaten über Umgebungsvariablen. Fertige <code>.env.example</code> inklusive.
+        Keine hartkodierten Secrets.
+      </div>
+      <span class="inc-badge">.ENV READY</span>
+    </div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Changelog</div>
+  <h2>v1 Prototyp <em>→</em> v2 Produktion</h2>
+  <p class="lead">
+    Das ist kein Update, sondern ein kompletter Rewrite – vom Single-User-Skript
+    zur skalierbaren, monetisierten Plattform.
+  </p>
+  <div class="cmp-wrap">
+    <div class="cmp-col old">
+      <div class="cmp-head">✗ VERSION 1.0 — PROTOTYP</div>
+      <div class="cmp-row"><span class="dot"></span>Nur ein Nutzer</div>
+      <div class="cmp-row"><span class="dot"></span>Einstellungen in settings.json</div>
+      <div class="cmp-row"><span class="dot"></span>API-Keys in config.py hartkodiert</div>
+      <div class="cmp-row"><span class="dot"></span>Keine Preispläne</div>
+      <div class="cmp-row"><span class="dot"></span>Nur Russisch</div>
+      <div class="cmp-row"><span class="dot"></span>Kein Crash-Schutz</div>
+      <div class="cmp-row"><span class="dot"></span>Copy-Paste-Code für Coin-Listen</div>
+      <div class="cmp-row"><span class="dot"></span>Unsicheres Dateischreiben</div>
+      <div class="cmp-row"><span class="dot"></span>Kein Health-Monitoring</div>
+      <div class="cmp-row"><span class="dot"></span>Kein Onboarding-Flow</div>
+    </div>
+    <div class="cmp-arr">→</div>
+    <div class="cmp-col new">
+      <div class="cmp-head">✓ VERSION 2.0 — PRODUKTION</div>
+      <div class="cmp-row"><span class="dot"></span>Multi-User (1 Thread pro Nutzer)</div>
+      <div class="cmp-row"><span class="dot"></span>SQLite + WAL + In-Memory-Cache</div>
+      <div class="cmp-row"><span class="dot"></span>Secrets über .env (python-dotenv)</div>
+      <div class="cmp-row"><span class="dot"></span>Free / Premium / Pro + Telegram Stars</div>
+      <div class="cmp-row"><span class="dot"></span>4 Sprachen (EN / RU / DE / UA)</div>
+      <div class="cmp-row"><span class="dot"></span>Exception-Handler + Nutzerbenachrichtigung</div>
+      <div class="cmp-row"><span class="dot"></span>Universelle Funktion _fetch_top_n(total)</div>
+      <div class="cmp-row"><span class="dot"></span>Atomic Write (tempfile + rename)</div>
+      <div class="cmp-row"><span class="dot"></span>HTTP /health Endpoint auf Port 8080</div>
+      <div class="cmp-row"><span class="dot"></span>Sprach- und Planwahl bei /start</div>
+    </div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Integrierte Monetarisierung</div>
+  <h2>3 Abostufen – <em>bereit zu verdienen</em></h2>
+  <p class="lead">
+    Ihre Kunden zahlen über Telegram Stars direkt im Messenger. Kein Payment-Provider.
+    Keine Drittanbieter-Gebühren.
+  </p>
+  <div class="plans">
+    <div class="plan">
+      <div class="plan-bar" style="background:#333;"></div>
+      <div class="plan-in">
+        <div class="plan-name">🆓 Free</div>
+        <div class="plan-price">KOSTENLOS · FÜR IMMER</div>
+        <div class="feat">2 Börsen gleichzeitig</div>
+        <div class="feat">2 Alerts pro Tag</div>
+        <div class="feat">Scan-Intervall 30s</div>
+        <div class="feat">Basis-Filter</div>
+        <div class="feat">Community-Support</div>
+      </div>
+    </div>
+    <div class="plan hot">
+      <div class="plan-bar" style="background:var(--teal);"></div>
+      <div class="plan-in">
+        <div class="plan-name">⭐ Premium</div>
+        <div class="plan-price">1.500 STARS / $29.99 / 30 TAGE</div>
+        <div class="feat">8 Börsen gleichzeitig</div>
+        <div class="feat">Unbegrenzte Alerts</div>
+        <div class="feat">Scan-Intervall 10s</div>
+        <div class="feat">Erweiterte Filter</div>
+        <div class="feat">E-Mail-Support</div>
+      </div>
+    </div>
+    <div class="plan">
+      <div class="plan-bar" style="background:var(--green);"></div>
+      <div class="plan-in">
+        <div class="plan-name">🚀 Pro</div>
+        <div class="plan-price">2.500 STARS / $49.99 / 30 TAGE</div>
+        <div class="feat">Alle 12 Börsen</div>
+        <div class="feat">Unbegrenzte Alerts</div>
+        <div class="feat">Scan-Intervall 5s (maximal)</div>
+        <div class="feat">Eigene Strategien + API-Zugriff</div>
+        <div class="feat">Persönlicher Support</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Technologie</div>
+  <h2>Solider <em>Open-Source</em>-Stack</h2>
+  <p class="lead">
+    Kein Vendor-Lock-in. Bewährte Bibliotheken. Einfach zu erweitern und anzupassen.
+  </p>
+  <div class="tech">
+    <div class="tech-item"><div class="t-icon">🐍</div><div><div class="t-name">Python 3.11+</div><div class="t-desc">Kernsprache</div></div></div>
+    <div class="tech-item"><div class="t-icon">🤖</div><div><div class="t-name">pyTelegramBotAPI</div><div class="t-desc">Bot-Framework</div></div></div>
+    <div class="tech-item"><div class="t-icon">📈</div><div><div class="t-name">CCXT</div><div class="t-desc">12 Börsen-Connectoren</div></div></div>
+    <div class="tech-item"><div class="t-icon">🌐</div><div><div class="t-name">aiohttp</div><div class="t-desc">Async CoinMarketCap</div></div></div>
+    <div class="tech-item"><div class="t-icon">🗄</div><div><div class="t-name">SQLite + WAL</div><div class="t-desc">Multi-User-Datenbank</div></div></div>
+    <div class="tech-item"><div class="t-icon">🔐</div><div><div class="t-name">python-dotenv</div><div class="t-desc">Sichere Konfiguration</div></div></div>
+    <div class="tech-item"><div class="t-icon">☁️</div><div><div class="t-name">AWS / Heroku</div><div class="t-desc">Bereit für Deployment</div></div></div>
+    <div class="tech-item"><div class="t-icon">⭐</div><div><div class="t-name">Telegram Stars</div><div class="t-desc">Native Zahlungen (XTR)</div></div></div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Zielgruppe</div>
+  <h2>Für wen ist das <em>gedacht?</em></h2>
+  <div class="for-grid">
+    <div class="for-card">
+      <div class="for-icon">💼</div>
+      <div class="for-title">Unternehmer</div>
+      <div class="for-sub">
+        Starten Sie ein Crypto-SaaS ohne Entwicklungsaufwand. Die Geschäftslogik ist bereits eingebaut.
+      </div>
+    </div>
+    <div class="for-card">
+      <div class="for-icon">🧑‍💻</div>
+      <div class="for-title">Entwickler</div>
+      <div class="for-sub">
+        Sparen Sie 3–6 Monate Entwicklungszeit. Erweitern und passen Sie den Code an Ihre Anforderungen an.
+      </div>
+    </div>
+    <div class="for-card">
+      <div class="for-icon">📊</div>
+      <div class="for-title">Trader</div>
+      <div class="for-sub">
+        Betreiben Sie Ihren eigenen privaten Arbitrage-Scanner mit voller Kontrolle über alle Einstellungen.
+      </div>
+    </div>
+    <div class="for-card">
+      <div class="for-icon">🏢</div>
+      <div class="for-title">Agenturen</div>
+      <div class="for-sub">
+        White-Label-Bot für Krypto-Kunden – als eigenes Produkt oder Service.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">FAQ</div>
+  <h2>Häufig gestellte <em>Fragen</em></h2>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Brauche ich Programmiererfahrung?</div>
+      <div class="faq-a">
+        Grundkenntnisse in Python sind hilfreich, aber nicht zwingend. Die Deployment-Guides führen Sie Schritt für Schritt
+        von Null zum laufenden Bot.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Darf ich den Bot umbenennen und weiterverkaufen?</div>
+      <div class="faq-a">
+        Ja. Nach dem Kauf gehört der Code Ihnen. Sie können ihn rebranden, verändern und monetarisieren, wie Sie möchten.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Welche Börsen werden unterstützt?</div>
+      <div class="faq-a">
+        Binance, Bybit, OKX, Gate.io, Bitget, KuCoin, Huobi, MEXC, BingX, HitBTC, Poloniex, Bitfinex – insgesamt 12 über CCXT.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Wie bezahlen Nutzer im Bot?</div>
+      <div class="faq-a">
+        Über Telegram Stars (XTR) – das native Bezahlsystem von Telegram. Keine externe Zahlungsintegration notwendig.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Welchen Server brauche ich?</div>
+      <div class="faq-a">
+        Jeder Linux-VPS reicht. Minimum: 512 MB RAM, 1 vCPU. Guides für AWS EC2 und Heroku sind enthalten.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Ist der Code gut dokumentiert?</div>
+      <div class="faq-a">
+        Ja – Docstrings, Inline-Kommentare und klare Modulstruktur nach Python-Best-Practices.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta">
+  <div class="sec-tag">Loslegen</div>
+  <h2>Ihr Arbitrage-Geschäft <em>beginnt hier</em></h2>
+  <p>
+    Eine Zahlung. Vollständiger Quellcode. Deployment-Guides inklusive. Live in wenigen Stunden.
+  </p>
+  <a href="https://tradebot1.gumroad.com/" target="_blank" class="btn-lg">Für $1.000 kaufen →</a>
+  <div class="delivery">
+    ⚡ Sofortige Lieferung · Vollständiger Quellcode · AWS + Heroku Guides · Lebenslange Nutzung
+  </div>
+</div>
+
+</div><!-- /v2-lang-de -->
+
+<!-- ══════════════════════════════════════════════════════════
+     V2 — UKRAINIAN
+══════════════════════════════════════════════════════════ -->
+<div class="lang-section" id="v2-lang-ua">
+
+<div class="hero">
+  <div class="hero-grid"></div><div class="hero-glow"></div>
+  <div class="eyebrow">⚡ Цифровий продукт · Повний вихідний код · Миттєва доставка</div>
+  <div class="logo-wrap"><img src="logo.jpg" alt="TradeBitBot logo"></div>
+  <h1>Trade<span class="h1-bit">Bit</span><span class="h1-sub">Arbitrage Bot</span></h1>
+  <div class="ver-tag">ВЕРСІЯ 2.0</div>
+  <p class="hero-desc">
+    <strong>Готовий до продакшну мультикористувацький Telegram-бот</strong>, що сканує 12 криптобірж
+    у реальному часі в пошуках арбітражних можливостей.<br>
+    Купіть вихідний код — <strong>запустіть власний бізнес уже сьогодні.</strong>
+  </p>
+  <div class="price-wrap">
+    <div class="price-box">
+      <div class="price-lbl">Одноразовий платіж · Довічне володіння кодом</div>
+      <div class="price-num"><sup>$</sup>1000</div>
+      <div class="price-sub">Повний вихідний код + гіди з деплою на AWS &amp; Heroku</div>
+    </div>
+  </div>
+  <a href="https://tradebot1.gumroad.com/" target="_blank" class="btn">Купити на Gumroad <span class="arr">→</span></a>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">12</div><div class="stat-l">Бірж</div></div>
+  <div class="stat"><div class="stat-n">5с</div><div class="stat-l">Мін. інтервал</div></div>
+  <div class="stat"><div class="stat-n">5K+</div><div class="stat-l">Монет</div></div>
+  <div class="stat"><div class="stat-n">3</div><div class="stat-l">Тарифи</div></div>
+  <div class="stat"><div class="stat-n">4</div><div class="stat-l">Мови</div></div>
+  <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Користувачів</div></div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Комплект поставки</div>
+  <h2>Все, що потрібно для <em>запуску</em></h2>
+  <p class="lead">
+    Одна покупка. Повний код. Покрокові гіди. Бот запуститься протягом кількох годин.
+  </p>
+  <div class="inc-grid">
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">01</span>
+        <span class="inc-title">Повний вихідний код v2.0</span>
+      </div>
+      <div class="inc-desc">
+        Усі Python-модулі: двигун арбітражу, Telegram-хендлери, платежі, база користувачів,
+        шедулер підписок, хелпери бірж — чиста та структурована кодова база.
+      </div>
+      <span class="inc-badge">PYTHON 3.11+</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">02</span>
+        <span class="inc-title">Гайд по деплою на AWS</span>
+      </div>
+      <div class="inc-desc">
+        Покроково: налаштування EC2, оточення, автозапуск через systemd, health-моніторинг
+        та прив’язка домену.
+      </div>
+      <span class="inc-badge">AWS EC2</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">03</span>
+        <span class="inc-title">Гайд по деплою на Heroku</span>
+      </div>
+      <div class="inc-desc">
+        Деплой однією командою: Procfile, змінні оточення, поради по безкоштовному тарифу,
+        конфігурація worker dyno.
+      </div>
+      <span class="inc-badge">HEROKU</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">04</span>
+        <span class="inc-title">Вбудована система оплати</span>
+      </div>
+      <div class="inc-desc">
+        Платежі через Telegram Stars (XTR) з 3 тарифами «з коробки». Без Stripe, без PayPal,
+        без комісій посередників.
+      </div>
+      <span class="inc-badge">TELEGRAM STARS</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">05</span>
+        <span class="inc-title">Мультикористувацька БД SQLite</span>
+      </div>
+      <div class="inc-desc">
+        SQLite в режимі WAL з ізоляцією користувачів, кешем у пам’яті та утилітою одноразової
+        міграції з JSON.
+      </div>
+      <span class="inc-badge">SQLITE + WAL</span>
+    </div>
+    <div class="inc">
+      <div class="inc-top">
+        <span class="inc-num">06</span>
+        <span class="inc-title">Безпечний шаблон конфігурації</span>
+      </div>
+      <div class="inc-desc">
+        Усі секрети через змінні оточення. В комплекті готовий <code>.env.example</code>.
+        Жодних хардкоджених ключів у коді.
+      </div>
+      <span class="inc-badge">.ENV READY</span>
+    </div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Історія змін</div>
+  <h2>Прототип v1 <em>→</em> продакшн v2</h2>
+  <p class="lead">
+    Це не оновлення. Це повна переробка — від скрипта для однієї людини до масштабованої
+    монетизованої платформи.
+  </p>
+  <div class="cmp-wrap">
+    <div class="cmp-col old">
+      <div class="cmp-head">✗ ВЕРСІЯ 1.0 — ПРОТОТИП</div>
+      <div class="cmp-row"><span class="dot"></span>Один користувач</div>
+      <div class="cmp-row"><span class="dot"></span>Налаштування в settings.json</div>
+      <div class="cmp-row"><span class="dot"></span>API-ключі захардкожені в config.py</div>
+      <div class="cmp-row"><span class="dot"></span>Немає тарифних планів</div>
+      <div class="cmp-row"><span class="dot"></span>Лише російська мова</div>
+      <div class="cmp-row"><span class="dot"></span>Немає захисту від крашу</div>
+      <div class="cmp-row"><span class="dot"></span>Копіпаст-листи монет</div>
+      <div class="cmp-row"><span class="dot"></span>Небезпечний запис файлів</div>
+      <div class="cmp-row"><span class="dot"></span>Немає health-моніторингу</div>
+      <div class="cmp-row"><span class="dot"></span>Немає онбордингу</div>
+    </div>
+    <div class="cmp-arr">→</div>
+    <div class="cmp-col new">
+      <div class="cmp-head">✓ ВЕРСІЯ 2.0 — ПРОДАКШН</div>
+      <div class="cmp-row"><span class="dot"></span>Мультикористувацький (потік на користувача)</div>
+      <div class="cmp-row"><span class="dot"></span>SQLite + WAL + кеш у пам’яті</div>
+      <div class="cmp-row"><span class="dot"></span>Секрети через .env (python-dotenv)</div>
+      <div class="cmp-row"><span class="dot"></span>Free / Premium / Pro + Telegram Stars</div>
+      <div class="cmp-row"><span class="dot"></span>4 мови (EN / RU / DE / UA)</div>
+      <div class="cmp-row"><span class="dot"></span>Обробка винятків + сповіщення користувача</div>
+      <div class="cmp-row"><span class="dot"></span>Універсальна функція _fetch_top_n(total)</div>
+      <div class="cmp-row"><span class="dot"></span>Atomic write (tempfile + rename)</div>
+      <div class="cmp-row"><span class="dot"></span>HTTP /health endpoint на порту 8080</div>
+      <div class="cmp-row"><span class="dot"></span>Вибір мови та плану при /start</div>
+    </div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Монетизація з коробки</div>
+  <h2>3 тарифи, <em>готові заробляти</em></h2>
+  <p class="lead">
+    Клієнти платять через Telegram Stars прямо у месенджері. Жодних зовнішніх платіжних систем
+    та комісій посередникам.
+  </p>
+  <div class="plans">
+    <div class="plan">
+      <div class="plan-bar" style="background:#333;"></div>
+      <div class="plan-in">
+        <div class="plan-name">🆓 Free</div>
+        <div class="plan-price">БЕЗКОШТОВНО · НАЗАВЖДИ</div>
+        <div class="feat">2 біржі одночасно</div>
+        <div class="feat">2 алерти на день</div>
+        <div class="feat">Інтервал сканування 30с</div>
+        <div class="feat">Базові фільтри прибутку</div>
+        <div class="feat">Підтримка спільноти</div>
+      </div>
+    </div>
+    <div class="plan hot">
+      <div class="plan-bar" style="background:var(--teal);"></div>
+      <div class="plan-in">
+        <div class="plan-name">⭐ Premium</div>
+        <div class="plan-price">1 500 STARS / $29.99 / 30 ДНІВ</div>
+        <div class="feat">8 бірж одночасно</div>
+        <div class="feat">Безлімітні алерти</div>
+        <div class="feat">Інтервал 10с</div>
+        <div class="feat">Розширені фільтри</div>
+        <div class="feat">Email-підтримка</div>
+      </div>
+    </div>
+    <div class="plan">
+      <div class="plan-bar" style="background:var(--green);"></div>
+      <div class="plan-in">
+        <div class="plan-name">🚀 Pro</div>
+        <div class="plan-price">2 500 STARS / $49.99 / 30 ДНІВ</div>
+        <div class="feat">Усі 12 бірж</div>
+        <div class="feat">Безлімітні алерти</div>
+        <div class="feat">Інтервал 5с (максимум)</div>
+        <div class="feat">Кастомні стратегії + API доступ</div>
+        <div class="feat">Персональна підтримка</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Технології</div>
+  <h2>Надійний <em>open-source</em> стек</h2>
+  <p class="lead">
+    Жодної прив’язки до вендорів. Перевірені бібліотеки. Легко розширювати та кастомізувати.
+  </p>
+  <div class="tech">
+    <div class="tech-item"><div class="t-icon">🐍</div><div><div class="t-name">Python 3.11+</div><div class="t-desc">Основна мова</div></div></div>
+    <div class="tech-item"><div class="t-icon">🤖</div><div><div class="t-name">pyTelegramBotAPI</div><div class="t-desc">Bot-фреймворк</div></div></div>
+    <div class="tech-item"><div class="t-icon">📈</div><div><div class="t-name">CCXT</div><div class="t-desc">12 конекторів бірж</div></div></div>
+    <div class="tech-item"><div class="t-icon">🌐</div><div><div class="t-name">aiohttp</div><div class="t-desc">Async CoinMarketCap</div></div></div>
+    <div class="tech-item"><div class="t-icon">🗄</div><div><div class="t-name">SQLite + WAL</div><div class="t-desc">Мультикористувацька БД</div></div></div>
+    <div class="tech-item"><div class="t-icon">🔐</div><div><div class="t-name">python-dotenv</div><div class="t-desc">Безпечна конфігурація</div></div></div>
+    <div class="tech-item"><div class="t-icon">☁️</div><div><div class="t-name">AWS / Heroku</div><div class="t-desc">Готовий до деплою</div></div></div>
+    <div class="tech-item"><div class="t-icon">⭐</div><div><div class="t-name">Telegram Stars</div><div class="t-desc">Нативні платежі (XTR)</div></div></div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">Для кого</div>
+  <h2>Кому це <em>підійде?</em></h2>
+  <div class="for-grid">
+    <div class="for-card">
+      <div class="for-icon">💼</div>
+      <div class="for-title">Підприємцям</div>
+      <div class="for-sub">
+        Запустіть crypto-SaaS без витрат на розробку. Бізнес-модель вже вбудована.
+      </div>
+    </div>
+    <div class="for-card">
+      <div class="for-icon">🧑‍💻</div>
+      <div class="for-title">Розробникам</div>
+      <div class="for-sub">
+        Зекономте 3–6 місяців розробки. Розширюйте й адаптуйте код під свої задачі.
+      </div>
+    </div>
+    <div class="for-card">
+      <div class="for-icon">📊</div>
+      <div class="for-title">Трейдерам</div>
+      <div class="for-sub">
+        Власний приватний арбітражний сканер з повним контролем налаштувань.
+      </div>
+    </div>
+    <div class="for-card">
+      <div class="for-icon">🏢</div>
+      <div class="for-title">Агенціям</div>
+      <div class="for-sub">
+        White-label рішення для клієнтів у крипто-ніші.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hdiv"></div>
+<div class="section">
+  <div class="sec-tag">FAQ</div>
+  <h2>Часті <em>запитання</em></h2>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Чи потрібен досвід програмування?</div>
+      <div class="faq-a">
+        Базові знання Python корисні, але не обов’язкові. Гіди з деплою ведуть крок за кроком
+        від нуля до працюючого бота.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Чи можна ребрендувати та продавати цього бота?</div>
+      <div class="faq-a">
+        Так. Після покупки код належить вам. Можете змінювати бренд, функціонал і монетизувати, як забажаєте.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Які біржі підтримуються?</div>
+      <div class="faq-a">
+        Binance, Bybit, OKX, Gate.io, Bitget, KuCoin, Huobi, MEXC, BingX, HitBTC, Poloniex, Bitfinex — 12 бірж через CCXT.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Як користувачі оплачують підписку?</div>
+      <div class="faq-a">
+        Через Telegram Stars (XTR) — вбудовану платіжну систему Telegram. Жодних зовнішніх інтеграцій.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Який сервер потрібен?</div>
+      <div class="faq-a">
+        Будь-який Linux VPS. Мінімум: 512 МБ RAM, 1 vCPU. Гіди для AWS EC2 та Heroku входять у комплект.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Чи добре задокументований код?</div>
+      <div class="faq-a">
+        Так — docstrings, коментарі й зрозуміла структура модулів відповідно до Python best practices.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta">
+  <div class="sec-tag">Почніть сьогодні</div>
+  <h2>Ваш арбітражний бізнес <em>починається тут</em></h2>
+  <p>
+    Один платіж. Повний вихідний код. Гіди з деплою в комплекті. Запуск за кілька годин.
+  </p>
+  <a href="https://tradebot1.gumroad.com/" target="_blank" class="btn-lg">Купити за $1 000 →</a>
+  <div class="delivery">
+    ⚡ Миттєва доставка · Повний вихідний код · AWS + Heroku гіди · Довічне володіння
+  </div>
+</div>
+
+</div><!-- /v2-lang-ua -->
+
+<!-- ══════════════════════════════════════════════════════════
      V1 — ENGLISH
 ══════════════════════════════════════════════════════════ -->
 <div class="lang-section" id="v1-lang-en">
@@ -980,6 +1607,691 @@ footer {
   <div class="delivery">⚡ Мгновенная доставка · Полный исходный код · Вечное владение · Путь обновления до v2</div>
 </div>
 </div><!-- /v1-lang-ru -->
+
+<!-- ══════════════════════════════════════════════════════════
+     V1 — GERMAN
+══════════════════════════════════════════════════════════ -->
+<div class="lang-section" id="v1-lang-de">
+  <div class="hero">
+    <div class="hero-grid"></div><div class="hero-glow"></div>
+    <div class="eyebrow">⚡ Digitales Produkt · Quellcode · Single-User-Prototyp</div>
+    <div class="logo-wrap">
+      <img src="logo_v1.jpg" onerror="this.src='logo.png'" alt="TradeBitBot v1 Logo">
+    </div>
+    <h1>Trade<span class="h1-bit">Bit</span><span class="h1-sub">Arbitrage Bot</span></h1>
+    <div class="ver-tag">VERSION 1.0</div>
+    <p class="hero-desc">
+      Der <strong>ursprüngliche Prototyp</strong> – ein Single-User-Telegram-Bot, der 12 Kryptobörsen
+      in Echtzeit auf Arbitrage-Spreads scannt.<br>
+      Einfache Einrichtung, <strong>russische Oberfläche, einsatzbereit in wenigen Minuten.</strong>
+    </p>
+    <div class="price-wrap">
+      <div class="price-box">
+        <div class="price-lbl">Einmalzahlung · Lebenslanges Eigentum am Code</div>
+        <div class="price-num"><sup>$</sup>100</div>
+        <div class="price-sub">Vollständiger Quellcode · Single-User · Idealer Einstieg</div>
+      </div>
+    </div>
+    <a href="https://tradebot1.gumroad.com/l/tradebitbot/" target="_blank" class="btn">
+      v1.0 auf Gumroad kaufen <span class="arr">→</span>
+    </a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-n">12</div><div class="stat-l">Börsen</div></div>
+    <div class="stat"><div class="stat-n">350+</div><div class="stat-l">Coins</div></div>
+    <div class="stat"><div class="stat-n">5K+</div><div class="stat-l">CMC-Fetch</div></div>
+    <div class="stat"><div class="stat-n">1</div><div class="stat-l">Sprache (RU)</div></div>
+    <div class="stat"><div class="stat-n">1</div><div class="stat-l">Nutzer</div></div>
+    <div class="stat"><div class="stat-n">~4</div><div class="stat-l">Dateien</div></div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">Was ist enthalten</div>
+    <h2>Alles, um <em>loszulegen</em></h2>
+    <p class="lead">
+      Sauberer, gut lesbarer Python-Code. Die Basis, aus der v2 entstanden ist.
+      Ideal zum Lernen oder für den privaten Einsatz.
+    </p>
+    <div class="v1-notice">
+      ⚠️ <strong>Hinweis:</strong> v1.0 ist ein Single-User-Prototyp. Keine Monetarisierung, kein Multi-User,
+      keine SQLite-Datenbank und kein Zahlungssystem. Für ein produktionsreifes, kommerzielles Produkt
+      siehe <strong>Version 2.0</strong>.
+    </div>
+    <div class="inc-grid">
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">01</span>
+          <span class="inc-title">main.py — Bot-Kern</span>
+        </div>
+        <div class="inc-desc">
+          Arbitrage-Scanner, Telegram-Menüs, Filter, Börsenauswahl, Blacklist-Verwaltung –
+          alles in einer klaren Datei.
+        </div>
+        <span class="inc-badge">PYTHON 3.10+</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">02</span>
+          <span class="inc-title">config.py — Konfiguration</span>
+        </div>
+        <div class="inc-desc">
+          Alle API-Keys für 12 Börsen, Telegram-Bot-Token, URLs und Metadaten – zentrale Stelle
+          für sämtliche Einstellungen.
+        </div>
+        <span class="inc-badge">12 BÖRSEN</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">03</span>
+          <span class="inc-title">def_all_coins.py — CMC-Fetcher</span>
+        </div>
+        <div class="inc-desc">
+          Asynchroner CoinMarketCap-Fetcher für Top 1K/2K/3K/5K/alle Coins.
+          Schreibt die Ergebnisse direkt in coin.py.
+        </div>
+        <span class="inc-badge">AIOHTTP</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">04</span>
+          <span class="inc-title">coin.py — Symbol-Liste</span>
+        </div>
+        <div class="inc-desc">
+          350+ vorkonfigurierte Handelspaare (X/USDT). Wird automatisch vom CMC-Fetcher
+          aktualisiert, wenn Sie den Liquiditätsfilter wechseln.
+        </div>
+        <span class="inc-badge">350+ SYMBOLE</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">05</span>
+          <span class="inc-title">settings.json — Persistenz</span>
+        </div>
+        <div class="inc-desc">
+          Profit-, Spread- und Volumenfilter, aktive Börsen, hinzugefügte/gesperrte Coins –
+          alles wird beim Start geladen und beim Stoppen gespeichert.
+        </div>
+        <span class="inc-badge">JSON-SPEICHER</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">06</span>
+          <span class="inc-title">Netzwerk-Check für Transfers</span>
+        </div>
+        <div class="inc-desc">
+          Findet das günstigste gemeinsame Auszahlungs→Einzahlungsnetzwerk zwischen zwei Börsen,
+          bevor ein Arbitrage-Alert gesendet wird.
+        </div>
+        <span class="inc-badge">CCXT</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">Funktionen</div>
+    <h2>Was der Bot <em>macht</em></h2>
+    <p class="lead">
+      Scannt jede Coin in Ihrer Liste über alle aktivierten Börsen, findet den besten Spread,
+      prüft Netzwerk und Gebühren und sendet Ihnen Alerts per Telegram.
+    </p>
+    <div class="tech">
+      <div class="tech-item">
+        <div class="t-icon">🔍</div>
+        <div>
+          <div class="t-name">Spread-Scanner</div>
+          <div class="t-desc">Min Ask vs. Max Bid über mehrere Börsen</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">💸</div>
+        <div>
+          <div class="t-name">Gebührenberechnung</div>
+          <div class="t-desc">Auszahlungsgebühren werden vom Profit abgezogen</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🌐</div>
+        <div>
+          <div class="t-name">Netzwerkprüfung</div>
+          <div class="t-desc">Suche nach einem gemeinsamen Transfer-Netzwerk</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">⚙️</div>
+        <div>
+          <div class="t-name">Filter</div>
+          <div class="t-desc">Min. Profit $ / Spread % / Volumen $</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">💱</div>
+        <div>
+          <div class="t-name">Börsen-Toggle</div>
+          <div class="t-desc">Börsen direkt im Bot aktivieren/deaktivieren</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🔴</div>
+        <div>
+          <div class="t-name">Blacklist</div>
+          <div class="t-desc">Bestimmte Coins vom Scannen ausschließen</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🔝</div>
+        <div>
+          <div class="t-name">Liquiditätsfilter</div>
+          <div class="t-desc">Top 1000 / 2000 / 3000 / 5000 / alle Coins</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">📲</div>
+        <div>
+          <div class="t-name">Direkte Links</div>
+          <div class="t-desc">Tippen auf Börsenname → Handelsseite öffnen</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">Technologie</div>
+    <h2>Schlanker <em>Open-Source</em>-Stack</h2>
+    <p class="lead">
+      Vier Dateien. Keine Datenbank. Kein Zahlungssystem. Reines Python – leicht zu lesen
+      und anzupassen.
+    </p>
+    <div class="tech">
+      <div class="tech-item">
+        <div class="t-icon">🐍</div>
+        <div>
+          <div class="t-name">Python 3.10+</div>
+          <div class="t-desc">Kernsprache</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🤖</div>
+        <div>
+          <div class="t-name">pyTelegramBotAPI</div>
+          <div class="t-desc">Bot-Framework</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">📈</div>
+        <div>
+          <div class="t-name">CCXT</div>
+          <div class="t-desc">12 Börsen-Connectoren</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🌐</div>
+        <div>
+          <div class="t-name">aiohttp</div>
+          <div class="t-desc">Async CoinMarketCap</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">📄</div>
+        <div>
+          <div class="t-name">JSON</div>
+          <div class="t-desc">Speicherung der Einstellungen</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🔑</div>
+        <div>
+          <div class="t-name">config.py</div>
+          <div class="t-desc">Zentralisierte Konfiguration</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">Für wen?</div>
+    <h2>Entwickelt für <em>privaten Einsatz</em></h2>
+    <div class="for-grid">
+      <div class="for-card">
+        <div class="for-icon">📊</div>
+        <div class="for-title">Trader</div>
+        <div class="for-sub">
+          Ihr eigener privater Arbitrage-Alert-Bot – ohne Abogebühren oder SaaS-Kosten.
+        </div>
+      </div>
+      <div class="for-card">
+        <div class="for-icon">🧑‍💻</div>
+        <div class="for-title">Entwickler</div>
+        <div class="for-sub">
+          Sauberer, überschaubarer Code zum Lernen, Forken und Erweitern. Perfekte Basis.
+        </div>
+      </div>
+      <div class="for-card">
+        <div class="for-icon">🎓</div>
+        <div class="for-title">Lernende</div>
+        <div class="for-sub">
+          Verstehen, wie Arbitrage-Bots von A bis Z funktionieren – vom Kursabruf bis zum Telegram-Alert.
+        </div>
+      </div>
+      <div class="for-card">
+        <div class="for-icon">🚀</div>
+        <div class="for-title">Upgrader</div>
+        <div class="for-sub">
+          Mit v1 starten, Struktur verstehen und später auf v2 upgraden, wenn Monetarisierung relevant wird.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">FAQ</div>
+    <h2>Häufige <em>Fragen</em></h2>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">Was ist der Unterschied zwischen v1 und v2?</div>
+        <div class="faq-a">
+          v1 ist ein Single-User-Tool ohne Monetarisierung. v2 ist eine Multi-User-Plattform
+          mit Telegram-Stars-Zahlungen, SQLite, mehrsprachiger UI und Admin-Logik.
+          Wenn Sie ein Geschäft aufbauen wollen, nehmen Sie v2.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Kann ich v1 auf jedem Server betreiben?</div>
+        <div class="faq-a">
+          Ja. Jeder Linux-VPS mit Python 3.10+ reicht aus. Sogar ein AWS-EC2-Free-Tier
+          kann genügen.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Werden API-Keys für Börsen benötigt?</div>
+        <div class="faq-a">
+          Für öffentliche Marktdaten (Ticker, Orderbuch) sind keine Keys nötig.
+          Keys werden nur für private Endpunkte (z.&nbsp;B. Auszahlungsgebühren) gebraucht.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Welche Börsen werden unterstützt?</div>
+        <div class="faq-a">
+          Alle 12: Binance, Bybit, OKX, Gate.io, Bitget, KuCoin, Huobi, MEXC, BingX,
+          HitBTC, Poloniex, Bitfinex.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Kann ich später von v1 auf v2 wechseln?</div>
+        <div class="faq-a">
+          Ja – v2 enthält ein Migrationstool, das Ihre Einstellungen einmalig in die neue
+          SQLite-Datenbank übernimmt.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Ist die Oberfläche auf Englisch?</div>
+        <div class="faq-a">
+          v1 besitzt ausschließlich eine russische Oberfläche. Für zweisprachige UI
+          (EN + RU) und zusätzliche Sprachen verwenden Sie v2.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="sec-tag">Prototyp holen</div>
+    <h2>Einfach. Schnell. <em>Ihres.</em></h2>
+    <p>
+      Eine Zahlung. Vollständiger Quellcode. Der ursprüngliche Arbitrage-Scanner. Starten Sie noch heute.
+    </p>
+    <a href="https://tradebot1.gumroad.com/l/tradebitbot/" target="_blank" class="btn-lg">
+      v1.0 für $100 kaufen →
+    </a>
+    <div class="delivery">
+      ⚡ Sofortige Lieferung · Vollständiger Quellcode · Lebenslange Nutzung · Upgrade-Pfad zu v2
+    </div>
+  </div>
+</div><!-- /v1-lang-de -->
+
+<!-- ══════════════════════════════════════════════════════════
+     V1 — UKRAINIAN
+══════════════════════════════════════════════════════════ -->
+<div class="lang-section" id="v1-lang-ua">
+  <div class="hero">
+    <div class="hero-grid"></div><div class="hero-glow"></div>
+    <div class="eyebrow">⚡ Цифровий продукт · Вихідний код · Однокористувацький прототип</div>
+    <div class="logo-wrap">
+      <img src="logo_v1.jpg" onerror="this.src='logo.png'" alt="TradeBitBot v1 logo">
+    </div>
+    <h1>Trade<span class="h1-bit">Bit</span><span class="h1-sub">Arbitrage Bot</span></h1>
+    <div class="ver-tag">ВЕРСІЯ 1.0</div>
+    <p class="hero-desc">
+      <strong>Оригінальний прототип</strong> — однокористувацький Telegram-бот, який сканує 12
+      криптобірж у реальному часі в пошуках арбітражних спредів.<br>
+      Проста установка, <strong>інтерфейс російською, запуск за кілька хвилин.</strong>
+    </p>
+    <div class="price-wrap">
+      <div class="price-box">
+        <div class="price-lbl">Одноразова оплата · Довічне володіння кодом</div>
+        <div class="price-num"><sup>$</sup>100</div>
+        <div class="price-sub">Повний вихідний код · Для одного користувача · Ідеальний старт</div>
+      </div>
+    </div>
+    <a href="https://tradebot1.gumroad.com/l/tradebitbot/" target="_blank" class="btn">
+      Купити v1.0 на Gumroad <span class="arr">→</span>
+    </a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-n">12</div><div class="stat-l">Бірж</div></div>
+    <div class="stat"><div class="stat-n">350+</div><div class="stat-l">Монет</div></div>
+    <div class="stat"><div class="stat-n">5K+</div><div class="stat-l">CMC-запитів</div></div>
+    <div class="stat"><div class="stat-n">1</div><div class="stat-l">Мова (RU)</div></div>
+    <div class="stat"><div class="stat-n">1</div><div class="stat-l">Користувач</div></div>
+    <div class="stat"><div class="stat-n">~4</div><div class="stat-l">Файли</div></div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">Що входить</div>
+    <h2>Все, щоб <em>почати</em></h2>
+    <p class="lead">
+      Чистий, зрозумілий Python-код. Фундамент, на якому побудована v2.
+      Підійде для навчання та особистого використання.
+    </p>
+    <div class="v1-notice">
+      ⚠️ <strong>Увага:</strong> v1.0 — це прототип для одного користувача. Немає монетизації,
+      мультикористувацької підтримки, SQLite та платіжної системи. Для продакшн-рішення
+      з монетизацією використовуйте <strong>версію 2.0</strong>.
+    </div>
+    <div class="inc-grid">
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">01</span>
+          <span class="inc-title">main.py — ядро бота</span>
+        </div>
+        <div class="inc-desc">
+          Двигун сканера арбітражу, обробники Telegram-меню, фільтри, увімкнення/вимкнення бірж,
+          керування чорним списком — все в одному файлі.
+        </div>
+        <span class="inc-badge">PYTHON 3.10+</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">02</span>
+          <span class="inc-title">config.py — конфігурація</span>
+        </div>
+        <div class="inc-desc">
+          API-ключі для 12 бірж, токен Telegram-бота, URL та метадані — єдина точка для всіх налаштувань.
+        </div>
+        <span class="inc-badge">12 БІРЖ</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">03</span>
+          <span class="inc-title">def_all_coins.py — CMC-фетчер</span>
+        </div>
+        <div class="inc-desc">
+          Асинхронний CoinMarketCap-фетчер для топ 1K/2K/3K/5K/всіх монет. Пише результати
+          безпосередньо в coin.py.
+        </div>
+        <span class="inc-badge">AIOHTTP</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">04</span>
+          <span class="inc-title">coin.py — список символів</span>
+        </div>
+        <div class="inc-desc">
+          350+ заздалегідь налаштованих торгових пар (X/USDT). Автоматично оновлюється фетчером CMC
+          при зміні фільтра ліквідності.
+        </div>
+        <span class="inc-badge">350+ СИМВОЛІВ</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">05</span>
+          <span class="inc-title">settings.json — збереження налаштувань</span>
+        </div>
+        <div class="inc-desc">
+          Фільтри прибутку, спреду, обсягу, активні біржі, додані/заблоковані монети —
+          все зберігається між перезапусками.
+        </div>
+        <span class="inc-badge">JSON-СХОВИЩЕ</span>
+      </div>
+      <div class="inc">
+        <div class="inc-top">
+          <span class="inc-num">06</span>
+          <span class="inc-title">Перевірка мережі переказу</span>
+        </div>
+        <div class="inc-desc">
+          Пошук найдешевшої спільної мережі виводу→депозиту між двома біржами
+          перед відправкою сповіщення.
+        </div>
+        <span class="inc-badge">CCXT</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">Можливості</div>
+    <h2>Що робить <em>бот</em></h2>
+    <p class="lead">
+      Сканує кожну монету у вашому списку по всіх увімкнених біржах, знаходить найкращий спред,
+      перевіряє мережу та комісії, а потім надсилає сповіщення в Telegram.
+    </p>
+    <div class="tech">
+      <div class="tech-item">
+        <div class="t-icon">🔍</div>
+        <div>
+          <div class="t-name">Сканер спреду</div>
+          <div class="t-desc">Мінімальний ask проти максимального bid між біржами</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">💸</div>
+        <div>
+          <div class="t-name">Розрахунок комісій</div>
+          <div class="t-desc">Комісія на вивід віднімається від прибутку</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🌐</div>
+        <div>
+          <div class="t-name">Перевірка мережі</div>
+          <div class="t-desc">Пошук спільної мережі для переказу між біржами</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">⚙️</div>
+        <div>
+          <div class="t-name">Фільтри</div>
+          <div class="t-desc">Мін. прибуток $ / спред % / обсяг $</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">💱</div>
+        <div>
+          <div class="t-name">Увімкнення/вимкнення бірж</div>
+          <div class="t-desc">Керування біржами прямо в Telegram</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🔴</div>
+        <div>
+          <div class="t-name">Чорний список</div>
+          <div class="t-desc">Пропуск окремих монет під час сканування</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🔝</div>
+        <div>
+          <div class="t-name">Фільтр ліквідності</div>
+          <div class="t-desc">Top 1000 / 2000 / 3000 / 5000 / всі монети</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">📲</div>
+        <div>
+          <div class="t-name">Прямі посилання</div>
+          <div class="t-desc">Натисніть на біржу → відкриється сторінка торгів</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">Технології</div>
+    <h2>Мінімалістичний <em>open-source</em> стек</h2>
+    <p class="lead">
+      Чотири файли. Без бази даних. Без платіжної системи. Чистий Python — легко читати й змінювати.
+    </p>
+    <div class="tech">
+      <div class="tech-item">
+        <div class="t-icon">🐍</div>
+        <div>
+          <div class="t-name">Python 3.10+</div>
+          <div class="t-desc">Основна мова</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🤖</div>
+        <div>
+          <div class="t-name">pyTelegramBotAPI</div>
+          <div class="t-desc">Фреймворк для бота</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">📈</div>
+        <div>
+          <div class="t-name">CCXT</div>
+          <div class="t-desc">12 конекторів до бірж</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🌐</div>
+        <div>
+          <div class="t-name">aiohttp</div>
+          <div class="t-desc">Async CoinMarketCap</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">📄</div>
+        <div>
+          <div class="t-name">JSON</div>
+          <div class="t-desc">Збереження налаштувань</div>
+        </div>
+      </div>
+      <div class="tech-item">
+        <div class="t-icon">🔑</div>
+        <div>
+          <div class="t-name">config.py</div>
+          <div class="t-desc">Централізована конфігурація</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">Для кого?</div>
+    <h2>Створено для <em>особистого використання</em></h2>
+    <div class="for-grid">
+      <div class="for-card">
+        <div class="for-icon">📊</div>
+        <div class="for-title">Трейдерів</div>
+        <div class="for-sub">
+          Власна приватна система сповіщень по арбітражу без підписок і SaaS-платежів.
+        </div>
+      </div>
+      <div class="for-card">
+        <div class="for-icon">🧑‍💻</div>
+        <div class="for-title">Розробників</div>
+        <div class="for-sub">
+          Зручна, компактна кодова база для вивчення, форку та розширення. Ідеальний фундамент.
+        </div>
+      </div>
+      <div class="for-card">
+        <div class="for-icon">🎓</div>
+        <div class="for-title">Тих, хто навчається</div>
+        <div class="for-sub">
+          Можливість побачити, як працює арбітражний бот від запиту ціни до сповіщення в Telegram.
+        </div>
+      </div>
+      <div class="for-card">
+        <div class="for-icon">🚀</div>
+        <div class="for-title">Тих, хто планує апгрейд</div>
+        <div class="for-sub">
+          Почніть із v1, розберіться в архітектурі й перейдіть на v2, коли будете готові монетизувати.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hdiv"></div>
+  <div class="section">
+    <div class="sec-tag">FAQ</div>
+    <h2>Часті <em>запитання</em></h2>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">Яка різниця між v1 та v2?</div>
+        <div class="faq-a">
+          v1 — це інструмент для одного користувача без монетизації. v2 — мультикористувацька платформа
+          з оплатою через Telegram Stars, SQLite, багатомовним інтерфейсом і логікою для бізнесу.
+          Якщо потрібен продукт для заробітку — обирайте v2.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Чи можна запускати v1 на будь-якому сервері?</div>
+        <div class="faq-a">
+          Так. Підійде будь-який Linux VPS з Python 3.10+. Навіть безкоштовний тариф AWS EC2 може бути достатнім.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Чи потрібні API-ключі бірж?</div>
+        <div class="faq-a">
+          Для публічних даних (тікери, ордербуки) ключі не потрібні. Вони потрібні лише
+          для приватних endpoint (наприклад, комісії на вивід).
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Які біржі підтримуються?</div>
+        <div class="faq-a">
+          Усі 12: Binance, Bybit, OKX, Gate.io, Bitget, KuCoin, Huobi, MEXC, BingX,
+          HitBTC, Poloniex, Bitfinex.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Чи можна перейти з v1 на v2?</div>
+        <div class="faq-a">
+          Так — у v2 є утиліта міграції, яка один раз переносить ваші налаштування в нову SQLite-базу.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Інтерфейс англійською?</div>
+        <div class="faq-a">
+          v1 має лише російський інтерфейс. Для англійської + інших мов використовуйте v2.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="sec-tag">Отримайте прототип</div>
+    <h2>Просто. Швидко. <em>Ваш.</em></h2>
+    <p>
+      Один платіж. Повний вихідний код. Оригінальний арбітражний сканер. Почніть вже сьогодні.
+    </p>
+    <a href="https://tradebot1.gumroad.com/l/tradebitbot/" target="_blank" class="btn-lg">
+      Купити v1.0 за $100 →
+    </a>
+    <div class="delivery">
+      ⚡ Миттєва доставка · Повний вихідний код · Довічне володіння · Можливість апгрейду до v2
+    </div>
+  </div>
+</div><!-- /v1-lang-ua -->
 
 <footer>
   TradeBitBot &nbsp;·&nbsp; Digital Product &nbsp;·&nbsp; Source Code<br>
