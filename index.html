@@ -482,15 +482,15 @@ footer {
   </div>
   <div class="lang-dropdown" id="langDropdown">
     <button class="lang-toggle" onclick="toggleLangMenu()">
-      <span style="font-size:14px">🇬🇧</span>
+      <span id="langFlag" style="font-size:14px">🇬🇧</span>
       <span id="langLabel">EN</span>
       <span class="arrow">▼</span>
     </button>
     <div class="lang-menu">
-      <button class="lang-opt active" id="opt-en" onclick="switchLang('en',this)">🇬🇧 EN</button>
-      <button class="lang-opt"        id="opt-ru" onclick="switchLang('ru',this)">🇷🇺 RU</button>
-      <button class="lang-opt"        id="opt-de" onclick="switchLang('de',this)">🇩🇪 DE</button>
-      <button class="lang-opt"        id="opt-ua" onclick="switchLang('ua',this)">🇺🇦 UA</button>
+      <button class="lang-opt active" id="opt-en" onclick="switchLang('en',this)" data-flag="🇬🇧">🇬🇧 EN</button>
+      <button class="lang-opt"        id="opt-ru" onclick="switchLang('ru',this)" data-flag="🇷🇺">🇷🇺 RU</button>
+      <button class="lang-opt"        id="opt-de" onclick="switchLang('de',this)" data-flag="🇩🇪">🇩🇪 DE</button>
+      <button class="lang-opt"        id="opt-ua" onclick="switchLang('ua',this)" data-flag="🇺🇦">🇺🇦 UA</button>
     </div>
   </div>
 </div>
@@ -2326,6 +2326,11 @@ function switchLang(lang, btn) {
   document.getElementById('langDropdown').classList.remove('open');
   // Update toggle label
   document.getElementById('langLabel').textContent = lang.toUpperCase();
+  var flagSpan = document.getElementById('langFlag');
+  if (flagSpan && btn.dataset.flag) {
+     flagSpan.textContent = btn.dataset.flag;
+  }
+
   showContent();
   window.scrollTo({ top: 52, behavior: 'smooth' });
 }
